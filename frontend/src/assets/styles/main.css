@@ -1,0 +1,13 @@
+:root {
+  --bg: #fef5ef;
+  --fg: #161e27;
+}
+
+html {
+  background-color: var(--bg);
+}
+
+table td,
+table th {
+  text-align: center;
+}

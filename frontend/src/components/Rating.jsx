@@ -1,51 +1,54 @@
-import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
+import { faStar, faStarHalfAlt, } from '@fortawesome/free-solid-svg-icons';
+import { faStar as faRegStar } from '@fortawesome/free-regular-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Rating = ({ value, text, color }) => {
+
   return (
     <div className='rating'>
       <span>
         {value >= 1 ? (
-          <FaStar />
+          <FontAwesomeIcon icon={faStar} /> 
         ) : value >= 0.5 ? (
-          <FaStarHalfAlt />
+          <FontAwesomeIcon icon={faStarHalfAlt} /> 
         ) : (
-          <FaRegStar />
+          <FontAwesomeIcon icon={faRegStar} /> 
         )}
       </span>
       <span>
         {value >= 2 ? (
-          <FaStar />
+          <FontAwesomeIcon icon={faStar} /> 
         ) : value >= 1.5 ? (
-          <FaStarHalfAlt />
+          <FontAwesomeIcon icon={faStarHalfAlt} /> 
         ) : (
-          <FaRegStar />
+          <FontAwesomeIcon icon={faRegStar} />
         )}
       </span>
       <span>
         {value >= 3 ? (
-          <FaStar />
+          <FontAwesomeIcon icon={faStar} /> 
         ) : value >= 2.5 ? (
-          <FaStarHalfAlt />
+          <FontAwesomeIcon icon={faStarHalfAlt} /> 
         ) : (
-          <FaRegStar />
+          <FontAwesomeIcon icon={faRegStar} /> 
         )}
       </span>
       <span>
         {value >= 4 ? (
-          <FaStar />
+          <FontAwesomeIcon icon={faStar} /> 
         ) : value >= 3.5 ? (
-          <FaStarHalfAlt />
+          <FontAwesomeIcon icon={faStarHalfAlt} /> 
         ) : (
-          <FaRegStar />
+          <FontAwesomeIcon icon={faRegStar} />
         )}
       </span>
       <span>
         {value >= 5 ? (
-          <FaStar />
+          <FontAwesomeIcon icon={faStar} /> 
         ) : value >= 4.5 ? (
-          <FaStarHalfAlt />
+          <FontAwesomeIcon icon={faStarHalfAlt} /> 
         ) : (
-          <FaRegStar />
+          <FontAwesomeIcon icon={faRegStar} />
         )}
       </span>
       <span className='rating-text'>{text && text}</span>

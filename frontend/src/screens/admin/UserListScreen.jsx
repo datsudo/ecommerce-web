@@ -1,13 +1,19 @@
 import React from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Table, Button } from 'react-bootstrap';
-import { FaTrash, FaEdit, FaCheck, FaTimes } from 'react-icons/fa';
 import Message from '../../components/Message';
 import Loader from '../../components/Loader';
 import {
   useDeleteUserMutation,
   useGetUsersQuery,
 } from '../../slices/usersApiSlice';
+import {
+  faCheck,
+  faTrash,
+  faPenToSquare,
+  faXmark
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { toast } from 'react-toastify';
 
 const UserListScreen = () => {
@@ -56,9 +62,13 @@ const UserListScreen = () => {
                 </td>
                 <td>
                   {user.isAdmin ? (
-                    <FaCheck style={{ color: 'green' }} />
+                    <>
+                      <FontAwesomeIcon icon={faCheck} style={{ color: 'green' }} />
+                    </>
                   ) : (
-                    <FaTimes style={{ color: 'red' }} />
+                    <>
+                      <FontAwesomeIcon icon={faXmark} style={{ color: 'red' }} />
+                    </>
                   )}
                 </td>
                 <td>
@@ -69,7 +79,7 @@ const UserListScreen = () => {
                         style={{ marginRight: '10px' }}
                       >
                         <Button variant='light' className='btn-sm'>
-                          <FaEdit />
+                          <FontAwesomeIcon icon={faPenToSquare} />
                         </Button>
                       </LinkContainer>
                       <Button
@@ -77,7 +87,7 @@ const UserListScreen = () => {
                         className='btn-sm'
                         onClick={() => deleteHandler(user._id)}
                       >
-                        <FaTrash style={{ color: 'white' }} />
+                        <FontAwesomeIcon icon={faTrash} style={{ color: 'white' }} />
                       </Button>
                     </>
                   )}

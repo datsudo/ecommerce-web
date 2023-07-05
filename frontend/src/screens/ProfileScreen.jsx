@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Table, Form, Button, Row, Col } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
-import { FaTimes } from 'react-icons/fa';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { toast } from 'react-toastify';
 import Message from '../components/Message';
@@ -132,14 +133,18 @@ const ProfileScreen = () => {
                     {order.isPaid ? (
                       order.paidAt.substring(0, 10)
                     ) : (
-                      <FaTimes style={{ color: 'red' }} />
+                      <>
+                        <FontAwesomeIcon icon={faXmark} style={{ color: 'red' }} />
+                      </>
                     )}
                   </td>
                   <td>
                     {order.isDelivered ? (
                       order.deliveredAt.substring(0, 10)
                     ) : (
-                      <FaTimes style={{ color: 'red' }} />
+                      <>
+                        <FontAwesomeIcon icon={faXmark} style={{ color: 'red' }} />
+                      </>
                     )}
                   </td>
                   <td>

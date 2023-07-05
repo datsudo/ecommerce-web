@@ -1,9 +1,10 @@
 import { LinkContainer } from 'react-router-bootstrap';
 import { Table, Button } from 'react-bootstrap';
-import { FaTimes } from 'react-icons/fa';
 import Message from '../../components/Message';
 import Loader from '../../components/Loader';
 import { useGetOrdersQuery } from '../../slices/ordersApiSlice';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const OrderListScreen = () => {
   const { data: orders, isLoading, error } = useGetOrdersQuery();
@@ -27,7 +28,7 @@ const OrderListScreen = () => {
               <th>TOTAL</th>
               <th>PAID</th>
               <th>DELIVERED</th>
-              <th></th>
+              <th>DETAILS</th>
             </tr>
           </thead>
           <tbody>
@@ -41,14 +42,18 @@ const OrderListScreen = () => {
                   {order.isPaid ? (
                     order.paidAt.substring(0, 10)
                   ) : (
-                    <FaTimes style={{ color: 'red' }} />
+                    <>
+                      <FontAwesomeIcon icon={faXmark} style={{ color: 'red' }} />
+                    </>
                   )}
                 </td>
                 <td>
                   {order.isDelivered ? (
                     order.deliveredAt.substring(0, 10)
                   ) : (
-                    <FaTimes style={{ color: 'red' }} />
+                    <>
+                      <FontAwesomeIcon icon={faXmark} style={{ color: 'red' }} />
+                    </>
                   )}
                 </td>
                 <td>

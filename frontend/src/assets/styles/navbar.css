@@ -1,0 +1,30 @@
+.navbar {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+
+.navbar-label {
+  color: var(--bg);
+}
+
+.navbar-light {
+  background-color: var(--bg) !important;
+}
+
+.navbar-upper {
+  background-color: var(--fg) !important;
+}
+
+.navbar-upper-row {
+  margin-left: 40px !important;
+  margin-right: 40px !important;
+}
+
+.dropdown-menu {
+  border-radius: 0 !important;
+}
+
+.dropdown-menu-end {
+  margin-bottom: 10px !important;
+  align-items: self-start;
+}

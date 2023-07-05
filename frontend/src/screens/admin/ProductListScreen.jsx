@@ -1,6 +1,5 @@
 import { LinkContainer } from 'react-router-bootstrap';
 import { Table, Button, Row, Col } from 'react-bootstrap';
-import { FaEdit, FaPlus, FaTrash } from 'react-icons/fa';
 import { useParams } from 'react-router-dom';
 import Message from '../../components/Message';
 import Loader from '../../components/Loader';
@@ -11,6 +10,12 @@ import {
   useCreateProductMutation,
 } from '../../slices/productsApiSlice';
 import { toast } from 'react-toastify';
+import {
+  faPlus,
+  faTrash,
+  faPenToSquare
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ProductListScreen = () => {
   const { pageNumber } = useParams();
@@ -55,7 +60,7 @@ const ProductListScreen = () => {
         </Col>
         <Col className='text-end'>
           <Button className='my-3' onClick={createProductHandler}>
-            <FaPlus /> Create Product
+            <FontAwesomeIcon icon={faPlus} /> Create Product
           </Button>
         </Col>
       </Row>
@@ -90,7 +95,7 @@ const ProductListScreen = () => {
                   <td>
                     <LinkContainer to={`/admin/product/${product._id}/edit`}>
                       <Button variant='light' className='btn-sm mx-2'>
-                        <FaEdit />
+                        <FontAwesomeIcon icon={faPenToSquare} />
                       </Button>
                     </LinkContainer>
                     <Button
@@ -98,7 +103,7 @@ const ProductListScreen = () => {
                       className='btn-sm'
                       onClick={() => deleteHandler(product._id)}
                     >
-                      <FaTrash style={{ color: 'white' }} />
+                      <FontAwesomeIcon icon={faTrash} style={{ color: 'white' }} />
                     </Button>
                   </td>
                 </tr>

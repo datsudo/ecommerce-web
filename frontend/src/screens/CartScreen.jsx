@@ -9,9 +9,10 @@ import {
   Button,
   Card,
 } from 'react-bootstrap';
-import { FaTrash } from 'react-icons/fa';
 import Message from '../components/Message';
 import { addToCart, removeFromCart } from '../slices/cartSlice';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const CartScreen = () => {
   const navigate = useNavigate();
@@ -73,7 +74,7 @@ const CartScreen = () => {
                       variant='light'
                       onClick={() => removeFromCartHandler(item._id)}
                     >
-                      <FaTrash />
+                      <FontAwesomeIcon icon={faTrash} style={{ color: 'white' }} />
                     </Button>
                   </Col>
                 </Row>
