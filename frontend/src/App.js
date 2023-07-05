@@ -27,11 +27,11 @@ const App = () => {
     <>
       <ToastContainer />
       <Header />
-      <main className='py-3'>
-        <Container>
+      <div className='main-content'>
+        <Container className='px-0 pb-5' fluid>
           <Outlet />
         </Container>
-      </main>
+      </div>
       <Footer />
     </>
   );

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Carousel, Image } from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
 import Message from './Message';
 import { useGetTopProductsQuery } from '../slices/productsApiSlice';
 
@@ -9,15 +9,26 @@ const ProductCarousel = () => {
   return isLoading ? null : error ? (
     <Message variant='danger'>{error?.data?.message || error.error}</Message>
   ) : (
-    <Carousel pause='hover' className='bg-primary mb-4'>
+    <Carousel
+        className='banner-ad mb-4'
+        indicators={false}
+        controls={false}
+        pause='hover'
+        fade
+      >
       {products.map((product) => (
         <Carousel.Item key={product._id}>
           <Link to={`/product/${product._id}`}>
-            <Image src={product.image} alt={product.name} fluid />
-            <Carousel.Caption className='carousel-caption'>
-              <h2 className='text-white text-right'>
-                {product.name} (${product.price})
-              </h2>
+            <img
+              className="banner-img d-block"
+              src={product.image}
+              alt={product.name}
+              >
+            </img>
+            <Carousel.Caption className='banner-caption d-md-block'>
+                {/* TODO: banner ad slogan and description*/}
+              <h1>Lorem Ipsum Dolor Sit Amet</h1>
+              <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
             </Carousel.Caption>
           </Link>
         </Carousel.Item>
