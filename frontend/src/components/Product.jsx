@@ -24,11 +24,11 @@ const Product = ({ product }) => {
             />
           </div>
           <span className='lts-product-price'>
-            <span className='currency-new'>₱ </span>
+            <span className='currency-new'>₱</span>
             {product.price}
           </span>
+          <span className='currency-orig'>₱</span>
           <span className='lts-product-orig-price'>
-            <span className='currency-orig'>₱ </span>
             {product.origPrice}
           </span>
         </Card.Text>

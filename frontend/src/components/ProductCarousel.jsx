@@ -29,7 +29,10 @@ const ProductCarousel = () => {
               {/* TODO: banner ad slogan and description*/}
               <h1>Lorem Ipsum Dolor Sit Amet</h1>
               <div>
-                <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+                <p className="banner-caption-desc">
+                  Lorem ipsum dolor sit amet, qui minim labore adipisicing
+                  minim sint cillum sint consectetur cupidatat.
+                </p>
               </div>
             </Carousel.Caption>
           </Link>
