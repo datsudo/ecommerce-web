@@ -15,10 +15,9 @@ const ProductEditScreen = () => {
   const { id: productId } = useParams();
 
   const [name, setName] = useState('');
-  const [price, setPrice] = useState(0);
+  const [origPrice, setOrigPrice] = useState(0);
+  const [discount, setDiscount] = useState(0);
   const [image, setImage] = useState('');
-  const [brand, setBrand] = useState('');
-  const [category, setCategory] = useState('');
   const [countInStock, setCountInStock] = useState(0);
   const [description, setDescription] = useState('');
 
@@ -43,10 +42,9 @@ const ProductEditScreen = () => {
       await updateProduct({
         productId,
         name,
-        price,
+        origPrice,
+        discount,
         image,
-        brand,
-        category,
         description,
         countInStock,
       });
@@ -61,10 +59,9 @@ const ProductEditScreen = () => {
   useEffect(() => {
     if (product) {
       setName(product.name);
-      setPrice(product.price);
+      setOrigPrice(product.origPrice);
+      setDiscount(product.discount);
       setImage(product.image);
-      setBrand(product.brand);
-      setCategory(product.category);
       setCountInStock(product.countInStock);
       setDescription(product.description);
     }
@@ -106,13 +103,23 @@ const ProductEditScreen = () => {
               ></Form.Control>
             </Form.Group>
 
-            <Form.Group controlId='price'>
-              <Form.Label>Price</Form.Label>
+            <Form.Group controlId='origPrice'>
+              <Form.Label>Original Price</Form.Label>
               <Form.Control
                 type='number'
-                placeholder='Enter price'
-                value={price}
-                onChange={(e) => setPrice(e.target.value)}
+                placeholder='Enter original price'
+                value={origPrice}
+                onChange={(e) => setOrigPrice(e.target.value)}
+              ></Form.Control>
+            </Form.Group>
+
+            <Form.Group controlId='discount'>
+              <Form.Label>Discount</Form.Label>
+              <Form.Control
+                type='number'
+                placeholder='Enter discount'
+                value={discount}
+                onChange={(e) => setDiscount(e.target.value)}
               ></Form.Control>
             </Form.Group>
 
@@ -132,16 +139,6 @@ const ProductEditScreen = () => {
               {loadingUpload && <Loader />}
             </Form.Group>
 
-            <Form.Group controlId='brand'>
-              <Form.Label>Brand</Form.Label>
-              <Form.Control
-                type='text'
-                placeholder='Enter brand'
-                value={brand}
-                onChange={(e) => setBrand(e.target.value)}
-              ></Form.Control>
-            </Form.Group>
-
             <Form.Group controlId='countInStock'>
               <Form.Label>Count In Stock</Form.Label>
               <Form.Control
@@ -149,16 +146,6 @@ const ProductEditScreen = () => {
                 placeholder='Enter countInStock'
                 value={countInStock}
                 onChange={(e) => setCountInStock(e.target.value)}
-              ></Form.Control>
-            </Form.Group>
-
-            <Form.Group controlId='category'>
-              <Form.Label>Category</Form.Label>
-              <Form.Control
-                type='text'
-                placeholder='Enter category'
-                value={category}
-                onChange={(e) => setCategory(e.target.value)}
               ></Form.Control>
             </Form.Group>
 
