@@ -1,4 +1,5 @@
 import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import {
   brandName,
   navEmail,
@@ -23,10 +24,9 @@ const Footer = () => {
       >
         <Container className='d-flex footer-main-row justify-content-center' >
           <Col md={4} sm={12} className='footer-logo mb-3'>
-            <Image
-              className='footer-logo'
-              src="/logo.png"
-            />
+            <Link to='/'>
+              <Image className='footer-logo' src="/logo.png" />
+            </Link>
           </Col>
 
           <Col md={8} className='footer-contacts'>
@@ -67,12 +67,14 @@ const Footer = () => {
               <Col>
                 <h5>About</h5>
                 <div>
-                  {/* TODO: About us page link */}
-                  <a href="#" className='social-link'>Our Business</a>
+                  <Link to='/about' className='social-link'>
+                    Our Business
+                  </Link>
                 </div>
                 <div>
-                  {/* TODO: Blog page link */}
-                  <a href="#" className='social-link'>Our Blog</a>
+                  <Link to='/blog' className='social-link'>
+                    Our Blog
+                  </Link>
                 </div>
               </Col>
             </Row>

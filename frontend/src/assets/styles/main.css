@@ -1,6 +1,7 @@
 :root {
   --bg: #fef5ef;
   --fg: #161e27;
+  --star-fg: #ffb805;
 }
 
 * {
@@ -37,4 +38,8 @@ body {
 
 .fa-arrow-up-right-from-square {
   width: 10px!important;
+}
+
+[class*='fa-star'] {
+  color: var(--star-fg);
 }
