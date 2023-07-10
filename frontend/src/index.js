@@ -18,6 +18,8 @@ import ProductScreen from './screens/ProductScreen';
 import CartScreen from './screens/CartScreen';
 import AboutScreen from './screens/AboutScreen';
 import BlogScreen from './screens/BlogScreen';
+import PostOne from './screens/PostOne.jsx';
+import PostTwo from './screens/PostTwo.jsx';
 import LoginScreen from './screens/LoginScreen';
 import RegisterScreen from './screens/RegisterScreen';
 import ShippingScreen from './screens/ShippingScreen';
@@ -48,6 +50,8 @@ const router = createBrowserRouter(
       <Route path='/cart' element={<CartScreen />} />
       <Route path='/about' element={<AboutScreen />} />
       <Route path='/blog' element={<BlogScreen />} />
+      <Route path='/blog/1' element={<PostOne/>} />
+      <Route path='/blog/2' element={<PostTwo />} />
       <Route path='/login' element={<LoginScreen />} />
       <Route path='/register' element={<RegisterScreen />} />
       {/* Registered users */}

@@ -2,7 +2,7 @@ import { Container, Image } from "react-bootstrap";
 
 export default function AboutScreen() {
   return (
-    <Container className='mt-5 text-center'>
+    <Container className='mt-3 text-center'>
       <Image
         src="/logo.png"
         className='mb-3'

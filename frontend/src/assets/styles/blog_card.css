@@ -1,0 +1,20 @@
+.blog-card-img {
+  object-fit: cover;
+  height: 30vh;
+  object-position: 50% 50%;
+}
+
+.blog-card {
+  width: 100%;
+}
+
+.blog-card-title {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--fg);
+}
+
+.blog-card-title:hover {
+  text-decoration: underline;
+}
+
