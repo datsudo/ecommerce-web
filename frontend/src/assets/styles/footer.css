@@ -1,0 +1,21 @@
+.footer-cont {
+  background-color: #ebdbb2;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.footer-logo {
+  width: 135px;
+  margin-right: 50px;
+}
+
+.footer-contacts {
+  margin: auto;
+  flex: 1;
+}
+
+.social-link{
+  text-decoration: none;
+  color: var(--fg);
+}
+

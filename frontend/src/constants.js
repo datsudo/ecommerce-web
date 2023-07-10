@@ -5,8 +5,17 @@ import {
   faRightToBracket,
   faMagnifyingGlass,
   faPeopleGroup,
-  faNewspaper
+  faNewspaper,
+  faAddressBook,
+  faPhone,
+  faEnvelope,
+  faArrowUpRightFromSquare
 } from '@fortawesome/free-solid-svg-icons';
+import {
+  faFacebookSquare,
+  faTwitterSquare,
+  faInstagramSquare
+} from '@fortawesome/free-brands-svg-icons';
 import logo from './assets/logo.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -32,3 +41,10 @@ export const aboutNavMenuLabel = ( <> <FontAwesomeIcon className="mt-1 pe-2" ico
 export const blogNavMenuLabel = ( <> <FontAwesomeIcon className='mt-1 pe-2' icon={faNewspaper} /> Blog </> )
 export const searchBtnIcon = ( <FontAwesomeIcon icon={faMagnifyingGlass} /> )
 export const brandLogo = ( <> <img src={logo} alt={brandName} style={{ width: '50px', objectFit: 'cover' }} /> </> )
+export const extLinkIcon = (<FontAwesomeIcon icon={faArrowUpRightFromSquare} />)
+export const fbIcon = (<FontAwesomeIcon icon={faFacebookSquare} className='ext-link-icon' />)
+export const twtIcon = (<FontAwesomeIcon icon={faTwitterSquare} className='ext-link-icon' />)
+export const instaIcon = (<FontAwesomeIcon icon={faInstagramSquare} className='ext-link-icon' />)
+export const phoneIcon = (<FontAwesomeIcon icon={faPhone} />)
+export const emailIcon = (<FontAwesomeIcon icon={faEnvelope} />)
+export const addressIcon = (<FontAwesomeIcon icon={faAddressBook} />)

@@ -1,16 +1,92 @@
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Image } from 'react-bootstrap';
+import {
+  brandName,
+  navEmail,
+  navPhoneNumber,
+  extLinkIcon,
+  phoneIcon,
+  emailIcon,
+  addressIcon,
+  fbIcon,
+  twtIcon,
+  instaIcon
+} from "../constants";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer>
-      <Container>
-        <Row>
-          <Col className='text-center py-3'>
-            <p>ProShop &copy; {currentYear}</p>
+      <Container
+        className='footer-cont pb-5 pt-4'
+        fluid
+      >
+        <Container className='d-flex footer-main-row justify-content-center' >
+          <Col md={4} sm={12} className='footer-logo mb-3'>
+            <Image
+              className='footer-logo'
+              src="/logo.png"
+            />
           </Col>
-        </Row>
+
+          <Col md={8} className='footer-contacts'>
+            <Row>
+              <h2>{brandName}</h2>
+            </Row>
+
+            <Row>
+              <Col className='mb-4' lg={4} md={12}>
+                <h5>Contact</h5>
+                <div><b>{phoneIcon} </b>
+                  <a href="tel:+631234567890" className='social-link'>{navPhoneNumber}</a>
+                </div>
+                <div><b>{emailIcon} </b>
+                  <a href="mailto:example@email.com" className='social-link'>{navEmail}</a>
+                </div>
+                <div>
+                  <b>{addressIcon} </b>
+                  10 St. Peter Street, San Jose Village,
+                  Muntinlupa City, Metro Manila
+                </div>
+              </Col>
+              <Col className='mb-4' md={4} sm={6} xs={12}>
+                <h5>Follow</h5>
+                <div>
+                  {fbIcon} {  }
+                  <a href="https://facebook.com" className='social-link' rel='noopener noreferrer'>Facebook {extLinkIcon}</a>
+                </div>
+                <div>
+                  {twtIcon} {  }
+                  <a href="https://twitter.com" className='social-link' rel='noopener noreferrer'>Twitter {extLinkIcon}</a>
+                </div>
+                <div>
+                  {instaIcon} {  }
+                  <a href="https://instagram.com" className='social-link' rel='noopener noreferrer'>Instagram {extLinkIcon}</a>
+                </div>
+              </Col>
+              <Col>
+                <h5>About</h5>
+                <div>
+                  {/* TODO: About us page link */}
+                  <a href="#" className='social-link'>Our Business</a>
+                </div>
+                <div>
+                  {/* TODO: Blog page link */}
+                  <a href="#" className='social-link'>Our Blog</a>
+                </div>
+              </Col>
+            </Row>
+          </Col>
+        </Container>
+      </Container>
+      <Container
+        className='text-center pt-1 pb-5'
+        fluid
+        style={{
+          backgroundColor: '#ebdbb2'
+        }}
+      >
+        <small>Sinulid at Kawit &copy; {currentYear}</small>
       </Container>
     </footer>
   );
