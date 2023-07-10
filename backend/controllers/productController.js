@@ -76,7 +76,7 @@ const updateProduct = asyncHandler(async (req, res) => {
     product.name = name;
     product.origPrice = origPrice;
     product.discount = discount;
-    product.price = origPrice - (origPrice * (discount / 100));
+    product.price = Math.floor((origPrice - (origPrice * (discount / 100))) * 100) / 100;
     product.description = description;
     product.image = image;
     product.countInStock = countInStock;
