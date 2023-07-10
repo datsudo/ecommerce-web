@@ -37,14 +37,13 @@ const SearchBox = () => {
               value={keyword}
               placeholder={searchPlaceholder}
               aria-label={searchPlaceholder}
-              className='rounded-0 border-2'
+              className='border-2'
             ></Form.Control>
           </Container>
 
           <Button
             type='submit'
             variant='secondary'
-            className='rounded-0'
           >
             {searchBtnIcon}
           </Button>

@@ -31,10 +31,6 @@
   background-color: var(--bg) !important;
 }
 
-.dropdown-menu {
-  border-radius: 0 !important;
-}
-
 .dropdown-menu-end {
   margin-bottom: 10px !important;
   align-items: self-start;

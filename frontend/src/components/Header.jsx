@@ -36,7 +36,7 @@ const Header = () => {
 
           <Navbar.Toggle
             aria-controls='basic-navbar-nav'
-            className='rounded-0 mt-2'
+            className='mt-2'
           />
 
           <Container fluid className='p-0 d-flex'>

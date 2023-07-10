@@ -3,6 +3,10 @@
   --fg: #161e27;
 }
 
+* {
+  border-radius: 0 !important;
+}
+
 html {
   background-color: var(--bg);
 }
@@ -13,16 +17,6 @@ body {
 
 .main-content {
   margin: 0 40px;
-}
-
-.dropdown,
-.dropdown-menu,
-.navbar-toggler,
-.card,
-.card-img-top,
-.form-control,
-.btn {
-  border-radius: 0 !important;
 }
 
 .btn-primary {

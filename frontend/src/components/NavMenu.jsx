@@ -53,7 +53,7 @@ export default function NavMenu () {
             title={( <> <FontAwesomeIcon className='mt-1 pe-1' icon={faUser} /> {userInfo.name} </> )}
             id='username'
             align='end'
-            className='rounded-0 ms-1'
+            className='ms-1'
           >
             <LinkContainer to='/profile'>
               <NavDropdown.Item>Profile</NavDropdown.Item>
@@ -68,7 +68,7 @@ export default function NavMenu () {
         <LinkContainer to='/login'>
           <Button
             variant='primary'
-            className='d-flex rounded-0 ms-1'
+            className='d-flex ms-1'
           >
             {loginNavMenuLabel}
           </Button>
@@ -81,7 +81,7 @@ export default function NavMenu () {
           title={adminNavMenuLabel}
           id='adminmenu'
           align='end'
-          className='rounded-0 ms-1'
+          className='ms-1'
         >
           <LinkContainer to='/admin/productlist'>
             <NavDropdown.Item>Products</NavDropdown.Item>

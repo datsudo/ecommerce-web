@@ -79,7 +79,6 @@ const PlaceOrderScreen = () => {
                             src={item.image}
                             alt={item.name}
                             fluid
-                            rounded
                           />
                         </Col>
                         <Col>
