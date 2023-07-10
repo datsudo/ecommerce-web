@@ -1,19 +1,11 @@
 import { Navbar, Container, } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import SearchBox from './SearchBox';
-import logo from '../assets/logo.png';
 import NavMenu from './NavMenu';
 import NavTop from './NavTop';
+import { brandName, brandLogo } from '../constants';
 
 const Header = () => {
-  // Labels and stuff
-  const brandName = "Brand Name"
-  const brandLogo = (
-    <>
-      <img src={logo} alt={brandName} />
-    </>
-  )
-
   return (
     <header>
       <NavTop />
@@ -30,7 +22,7 @@ const Header = () => {
           <LinkContainer to='/'>
             {/* BRAND */}
             <Navbar.Brand alt={brandName} className='mt-2'>
-              {brandName}
+              {brandLogo}
             </Navbar.Brand>
           </LinkContainer>
 

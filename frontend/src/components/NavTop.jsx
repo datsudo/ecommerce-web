@@ -1,13 +1,8 @@
-import { faNewspaper, faPeopleGroup } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Container, Row, Col } from "react-bootstrap"
+import { navEmail, navPhoneNumber, aboutNavMenuLabel, blogNavMenuLabel, brandName } from '../constants.js';
 
 export default function NavTop() {
-  const navPhoneNumber = "+63(12)3456-7890"
-  const navEmail = "example@gmail.com"
-  const aboutNavMenuLabel = ( <> <FontAwesomeIcon className="mt-1 pe-2" icon={faPeopleGroup} /> About Us </> )
-  const blogNavMenuLabel = ( <> <FontAwesomeIcon className='mt-1 pe-2' icon={faNewspaper} /> Blog </> )
-
   return (
     <Container fluid className='p-0 navbar-upper'>
       <Row className='p-0 navbar-upper-row'>
@@ -15,7 +10,7 @@ export default function NavTop() {
         <Col lg={4} sm={12} xs={12}>
           <Row lg='auto'>
             <Col lg='auto' className='text-center navbar-label navbar-upper-brand'>
-              BRAND NAME
+              {brandName}
             </Col>
           </Row>
         </Col>
