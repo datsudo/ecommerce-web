@@ -26,9 +26,11 @@ const ProductCarousel = () => {
               >
             </img>
             <Carousel.Caption className='banner-caption d-md-block'>
-                {/* TODO: banner ad slogan and description*/}
+              {/* TODO: banner ad slogan and description*/}
               <h1>Lorem Ipsum Dolor Sit Amet</h1>
-              <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+              <div>
+                <p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+              </div>
             </Carousel.Caption>
           </Link>
         </Carousel.Item>
