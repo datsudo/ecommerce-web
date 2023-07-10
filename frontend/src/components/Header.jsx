@@ -2,13 +2,11 @@ import { Navbar, Container, } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import SearchBox from './SearchBox';
 import NavMenu from './NavMenu';
-import NavTop from './NavTop';
 import { brandName, brandLogo } from '../constants';
 
 const Header = () => {
   return (
     <header>
-      <NavTop />
       <Navbar
         expand='lg'
         className='bg-body-tertiary'

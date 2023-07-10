@@ -9,7 +9,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   cartNavMenuLabel,
   adminNavMenuLabel,
-  loginNavMenuLabel
+  loginNavMenuLabel,
+  aboutNavMenuLabel,
+  blogNavMenuLabel
 } from "../constants";
 
 
@@ -35,7 +37,20 @@ export default function NavMenu () {
 
   return (
     <Nav>
-      <LinkContainer to='/cart' className='d-flex ms-1'>
+
+      <LinkContainer to='/about' className='d-flex ms-1'>
+        <Nav.Link>
+          {aboutNavMenuLabel}
+        </Nav.Link>
+      </LinkContainer>
+
+      <LinkContainer to='/blog' className='d-flex'>
+        <Nav.Link>
+          {blogNavMenuLabel}
+        </Nav.Link>
+      </LinkContainer>
+
+      <LinkContainer to='/cart' className='d-flex'>
         <Nav.Link>
           {cartNavMenuLabel}
           {cartItems.length > 0 && (
