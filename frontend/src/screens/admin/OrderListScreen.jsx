@@ -43,7 +43,10 @@ const OrderListScreen = () => {
                     order.paidAt.substring(0, 10)
                   ) : (
                     <>
-                      <FontAwesomeIcon icon={faXmark} style={{ color: 'red' }} />
+                      <FontAwesomeIcon
+                        icon={faXmark}
+                        style={{ color: 'red' }}
+                      />
                     </>
                   )}
                 </td>
@@ -52,7 +55,10 @@ const OrderListScreen = () => {
                     order.deliveredAt.substring(0, 10)
                   ) : (
                     <>
-                      <FontAwesomeIcon icon={faXmark} style={{ color: 'red' }} />
+                      <FontAwesomeIcon
+                        icon={faXmark}
+                        style={{ color: 'red' }}
+                      />
                     </>
                   )}
                 </td>

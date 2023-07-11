@@ -134,7 +134,10 @@ const ProfileScreen = () => {
                       order.paidAt.substring(0, 10)
                     ) : (
                       <>
-                        <FontAwesomeIcon icon={faXmark} style={{ color: 'red' }} />
+                        <FontAwesomeIcon
+                          icon={faXmark}
+                          style={{ color: 'red' }}
+                        />
                       </>
                     )}
                   </td>
@@ -143,7 +146,10 @@ const ProfileScreen = () => {
                       order.deliveredAt.substring(0, 10)
                     ) : (
                       <>
-                        <FontAwesomeIcon icon={faXmark} style={{ color: 'red' }} />
+                        <FontAwesomeIcon
+                          icon={faXmark}
+                          style={{ color: 'red' }}
+                        />
                       </>
                     )}
                   </td>

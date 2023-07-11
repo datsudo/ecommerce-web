@@ -23,12 +23,8 @@ const SearchBox = () => {
 
   return (
     <Container fluid className='p-0 d-flex'>
-      <Form
-        onSubmit={submitHandler}
-        className='flex-fill'
-      >
+      <Form onSubmit={submitHandler} className='flex-fill'>
         <Container fluid className='p-0 d-flex'>
-
           <Container fluid className='p-0 me-1'>
             <Form.Control
               type='text'
@@ -41,13 +37,9 @@ const SearchBox = () => {
             ></Form.Control>
           </Container>
 
-          <Button
-            type='submit'
-            variant='secondary'
-          >
+          <Button type='submit' variant='secondary'>
             {searchBtnIcon}
           </Button>
-
         </Container>
       </Form>
     </Container>

@@ -67,10 +67,7 @@ const ProductScreen = () => {
 
   return (
     <>
-      <Link
-        className='btn btn-light my-3'
-        to='/'
-      >
+      <Link className='btn btn-light my-3' to='/'>
         Go Back
       </Link>
       {isLoading ? (
@@ -87,7 +84,10 @@ const ProductScreen = () => {
               <Image src={product.image} alt={product.name} fluid />
             </Col>
             <Col md={3}>
-              <ListGroup className='py-2 product-dtls' style={{ backgroundColor: 'white' }}>
+              <ListGroup
+                className='py-2 product-dtls'
+                style={{ backgroundColor: 'white' }}
+              >
                 <ListGroup.Item className='product-dtls-item'>
                   <h3>{product.name}</h3>
                 </ListGroup.Item>
@@ -98,7 +98,8 @@ const ProductScreen = () => {
                   />
                 </ListGroup.Item>
                 <ListGroup.Item className='product-dtls-item'>
-                  <b>Price:</b> ₱{product.price}</ListGroup.Item>
+                  <b>Price:</b> ₱{product.price}
+                </ListGroup.Item>
                 <ListGroup.Item className='product-dtls-item-last'>
                   <b>Description:</b> {product.description}
                 </ListGroup.Item>
@@ -137,7 +138,11 @@ const ProductScreen = () => {
                           >
                             {[...Array(product.countInStock).keys()].map(
                               (x) => (
-                                <option className={`val-${x+1}`} key={x + 1} value={x + 1}>
+                                <option
+                                  className={`val-${x + 1}`}
+                                  key={x + 1}
+                                  value={x + 1}
+                                >
                                   {x + 1}
                                 </option>
                               )
@@ -154,7 +159,7 @@ const ProductScreen = () => {
                       type='button'
                       disabled={product.countInStock === 0}
                       onClick={addToCartHandler}
-                      style={{ width: '100%'}}
+                      style={{ width: '100%' }}
                     >
                       Add To Cart
                     </Button>

@@ -42,7 +42,11 @@ const CartScreen = () => {
             Your cart is empty <Link to='/'>Go Back</Link>
           </Message>
         ) : (
-          <ListGroup variant='flush' className='p-1 prdc-cart-item' style={{ backgroundColor: 'white' }}>
+          <ListGroup
+            variant='flush'
+            className='p-1 prdc-cart-item'
+            style={{ backgroundColor: 'white' }}
+          >
             {cartItems.map((item) => (
               <ListGroup.Item key={item._id} className='py-3'>
                 <Row>
@@ -71,7 +75,8 @@ const CartScreen = () => {
                   <Col md={2}>
                     <Button
                       type='button'
-                      variant='light' className='trash-cart-btn'
+                      variant='light'
+                      className='trash-cart-btn'
                       onClick={() => removeFromCartHandler(item._id)}
                     >
                       <FontAwesomeIcon icon={faTrash} />
@@ -91,7 +96,7 @@ const CartScreen = () => {
                 Subtotal ({cartItems.reduce((acc, item) => acc + item.qty, 0)})
                 items
               </h2>
-              ₱ 
+              ₱
               {cartItems
                 .reduce((acc, item) => acc + item.qty * item.price, 0)
                 .toFixed(2)}

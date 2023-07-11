@@ -11,7 +11,7 @@ import {
   faCheck,
   faTrash,
   faPenToSquare,
-  faXmark
+  faXmark,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { toast } from 'react-toastify';
@@ -63,11 +63,17 @@ const UserListScreen = () => {
                 <td>
                   {user.isAdmin ? (
                     <>
-                      <FontAwesomeIcon icon={faCheck} style={{ color: 'green' }} />
+                      <FontAwesomeIcon
+                        icon={faCheck}
+                        style={{ color: 'green' }}
+                      />
                     </>
                   ) : (
                     <>
-                      <FontAwesomeIcon icon={faXmark} style={{ color: 'red' }} />
+                      <FontAwesomeIcon
+                        icon={faXmark}
+                        style={{ color: 'red' }}
+                      />
                     </>
                   )}
                 </td>
@@ -87,7 +93,10 @@ const UserListScreen = () => {
                         className='btn-sm'
                         onClick={() => deleteHandler(user._id)}
                       >
-                        <FontAwesomeIcon icon={faTrash} style={{ color: 'white' }} />
+                        <FontAwesomeIcon
+                          icon={faTrash}
+                          style={{ color: 'white' }}
+                        />
                       </Button>
                     </>
                   )}

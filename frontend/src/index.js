@@ -50,7 +50,7 @@ const router = createBrowserRouter(
       <Route path='/cart' element={<CartScreen />} />
       <Route path='/about' element={<AboutScreen />} />
       <Route path='/blog' element={<BlogScreen />} />
-      <Route path='/blog/1' element={<PostOne/>} />
+      <Route path='/blog/1' element={<PostOne />} />
       <Route path='/blog/2' element={<PostTwo />} />
       <Route path='/login' element={<LoginScreen />} />
       <Route path='/register' element={<RegisterScreen />} />

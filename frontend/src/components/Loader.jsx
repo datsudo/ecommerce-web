@@ -12,8 +12,8 @@ const Loader = () => {
         display: 'block',
       }}
       ref={(node) => {
-        if(node) {
-          node.style.setProperty("border-radius", "50%", "important")
+        if (node) {
+          node.style.setProperty('border-radius', '50%', 'important');
         }
       }}
     ></Spinner>

@@ -13,7 +13,7 @@ import { toast } from 'react-toastify';
 import {
   faPlus,
   faTrash,
-  faPenToSquare
+  faPenToSquare,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -103,7 +103,10 @@ const ProductListScreen = () => {
                       className='btn-sm'
                       onClick={() => deleteHandler(product._id)}
                     >
-                      <FontAwesomeIcon icon={faTrash} style={{ color: 'white' }} />
+                      <FontAwesomeIcon
+                        icon={faTrash}
+                        style={{ color: 'white' }}
+                      />
                     </Button>
                   </td>
                 </tr>

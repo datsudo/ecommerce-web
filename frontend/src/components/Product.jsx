@@ -6,7 +6,11 @@ const Product = ({ product }) => {
   return (
     <Card className='lts-product-card' fluid>
       <Link to={`/product/${product._id}`}>
-        <Card.Img src={product.image} className='lts-product-img' variant='top' />
+        <Card.Img
+          src={product.image}
+          className='lts-product-img'
+          variant='top'
+        />
       </Link>
 
       <Card.Body>
@@ -18,22 +22,15 @@ const Product = ({ product }) => {
 
         <Card.Text>
           <div>
-            <Rating
-              value={product.rating}
-              text={` (${product.numReviews})`}
-            />
+            <Rating value={product.rating} text={` (${product.numReviews})`} />
           </div>
           <span className='lts-product-price'>
             <span className='currency-new'>₱</span>
             {product.price}
           </span>
           <span className='currency-orig'>₱</span>
-          <span className='lts-product-orig-price'>
-            {product.origPrice}
-          </span>
+          <span className='lts-product-orig-price'>{product.origPrice}</span>
         </Card.Text>
-
-
       </Card.Body>
     </Card>
   );
