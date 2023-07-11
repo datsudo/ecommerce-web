@@ -3,7 +3,7 @@
 
 <div align="center">
     <h1 align="center">Sinulid at Kawit</h1>
-    <img src="./frontend/public/logo.png" alt="ecommerce-web-logo" />
+    <img src="./frontend/public/logo.png" alt="ecommerce-web-logo" width='100' />
     <p align="center">
         An e-commerce website for crocheted bags.
         <br />
