@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <footer>
       <Container
-        className='footer-cont pb-5 pt-4'
+        className='footer-cont pb-3 pt-5'
         fluid
       >
         <Container className='d-flex footer-main-row justify-content-center' >
