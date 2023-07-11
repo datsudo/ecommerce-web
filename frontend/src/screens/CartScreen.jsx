@@ -42,9 +42,9 @@ const CartScreen = () => {
             Your cart is empty <Link to='/'>Go Back</Link>
           </Message>
         ) : (
-          <ListGroup variant='flush'>
+          <ListGroup variant='flush' className='p-1 prdc-cart-item' style={{ backgroundColor: 'white' }}>
             {cartItems.map((item) => (
-              <ListGroup.Item key={item._id}>
+              <ListGroup.Item key={item._id} className='py-3'>
                 <Row>
                   <Col md={2}>
                     <Image src={item.image} alt={item.name} fluid />
@@ -71,10 +71,10 @@ const CartScreen = () => {
                   <Col md={2}>
                     <Button
                       type='button'
-                      variant='light'
+                      variant='light' className='trash-cart-btn'
                       onClick={() => removeFromCartHandler(item._id)}
                     >
-                      <FontAwesomeIcon icon={faTrash} style={{ color: 'white' }} />
+                      <FontAwesomeIcon icon={faTrash} />
                     </Button>
                   </Col>
                 </Row>

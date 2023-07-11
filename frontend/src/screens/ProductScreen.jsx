@@ -67,7 +67,10 @@ const ProductScreen = () => {
 
   return (
     <>
-      <Link className='btn btn-light my-3' to='/'>
+      <Link
+        className='btn btn-light my-3'
+        to='/'
+      >
         Go Back
       </Link>
       {isLoading ? (
@@ -84,25 +87,26 @@ const ProductScreen = () => {
               <Image src={product.image} alt={product.name} fluid />
             </Col>
             <Col md={3}>
-              <ListGroup variant='flush'>
-                <ListGroup.Item>
+              <ListGroup className='py-2 product-dtls' style={{ backgroundColor: 'white' }}>
+                <ListGroup.Item className='product-dtls-item'>
                   <h3>{product.name}</h3>
                 </ListGroup.Item>
-                <ListGroup.Item>
+                <ListGroup.Item className='product-dtls-item'>
                   <Rating
                     value={product.rating}
                     text={` (${product.numReviews})`}
                   />
                 </ListGroup.Item>
-                <ListGroup.Item><b>Price:</b> ₱{product.price}</ListGroup.Item>
-                <ListGroup.Item>
+                <ListGroup.Item className='product-dtls-item'>
+                  <b>Price:</b> ₱{product.price}</ListGroup.Item>
+                <ListGroup.Item className='product-dtls-item-last'>
                   <b>Description:</b> {product.description}
                 </ListGroup.Item>
               </ListGroup>
             </Col>
             <Col md={3}>
               <Card>
-                <ListGroup variant='flush'>
+                <ListGroup variant='flush' className='py-2 product-comp'>
                   <ListGroup.Item>
                     <Row>
                       <Col>Price:</Col>
@@ -133,7 +137,7 @@ const ProductScreen = () => {
                           >
                             {[...Array(product.countInStock).keys()].map(
                               (x) => (
-                                <option key={x + 1} value={x + 1}>
+                                <option className={`val-${x+1}`} key={x + 1} value={x + 1}>
                                   {x + 1}
                                 </option>
                               )
@@ -172,7 +176,7 @@ const ProductScreen = () => {
                     <p>{review.comment}</p>
                   </ListGroup.Item>
                 ))}
-                <ListGroup.Item>
+                <ListGroup.Item className='review-list py-3'>
                   <h2>Write a Customer Review</h2>
 
                   {loadingProductReview && <Loader />}

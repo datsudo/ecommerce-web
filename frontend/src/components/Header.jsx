@@ -19,8 +19,11 @@ const Header = () => {
 
           <LinkContainer to='/'>
             {/* BRAND */}
-            <Navbar.Brand alt={brandName} className='mt-2'>
+            <Navbar.Brand alt={brandName} className='mt-2 d-flex'>
               {brandLogo}
+              <Container className='px-0'>
+                <span className='s-at-k ms-2' style={{ fontSize: '1.8rem' }}>{brandName}</span>
+              </Container>
             </Navbar.Brand>
           </LinkContainer>
 
