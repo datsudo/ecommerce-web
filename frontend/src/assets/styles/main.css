@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+
 :root {
   --bg: #fef5ef;
   --fg: #161e27;
   --star-fg: #ffb805;
+  --footer-bg: #cff4fc;
+  --primary: #087e8b;
+  --secondary: #34344a;
+  --accent: #f39237;
+  --light-border: #d7d8d3;
 }
 
 * {
@@ -14,6 +23,29 @@ html {
 
 body {
   background-color: var(--bg);
+  font-family: 'Oxygen', sans-serif;
+  color: var(--fg) !important;
+}
+
+html, body, #root, .App {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Volkhov', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent);
 }
 
 .main-content {
@@ -22,6 +54,18 @@ body {
 
 .btn-primary {
   border: none !important;
+  background-color: var(--primary);
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+}
+.btn-secondary:hover {
+  background-color: var(--primary);
+}
+
+.btn-light {
+  border: 1px var(--light-border) solid !important;
 }
 
 .btn-primary:hover {
@@ -32,7 +76,7 @@ body {
 	-ms-transform: translateY(-2px);
 	-o-transform: translateY(-2px);
 	transform: translateY(-2px);
-  background-color: #0d6efd;
+  background-color: var(--accent);
   border: none;
 }
 
@@ -42,4 +86,34 @@ body {
 
 [class*='fa-star'] {
   color: var(--star-fg);
+}
+
+.s-at-k {
+  font-family: 'Oleo Script', 'Times New Roman', serif;
+}
+
+.review-list,
+.product-dtls,
+.product-comp {
+  border: 1px var(--light-border) solid !important;
+}
+
+.product-dtls-item {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px var(--light-border) solid;
+}
+
+.product-dtls-item-last {
+  border: none;
+}
+
+.prdc-cart-item {
+  border: 1px var(--light-border) solid;
+}
+
+.trash-cart-btn {
+  color: var(--bg);
+  background-color: #e34f4f;
 }

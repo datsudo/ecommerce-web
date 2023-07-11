@@ -1,6 +1,6 @@
 .lts-product-img {
   object-fit: cover;
-  height: 50vh;
+  height: 30vh;
   object-position: 50% 50%;
 }
 
@@ -39,6 +39,7 @@
 }
 
 .lts-product-price {
+  color: var(--fg) !important;
   font-size: 1.40rem;
   margin-right: 10px;
 }
@@ -61,11 +62,11 @@
 }
 
 .lts-product-title {
-  color: black;
+  color: var(--fg);
   text-decoration: none !important;
 }
 
 .lts-product-title:hover {
   text-decoration: underline;
-  color: black;
+  color: var(--fg);
 }

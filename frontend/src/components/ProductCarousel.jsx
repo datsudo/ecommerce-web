@@ -10,7 +10,7 @@ const ProductCarousel = () => {
     <Message variant='danger'>{error?.data?.message || error.error}</Message>
   ) : (
     <Carousel
-        className='banner-ad mb-4'
+        className='banner-ad mb-5'
         indicators={false}
         controls={false}
         pause='hover'

@@ -1,7 +1,11 @@
 .footer-cont {
-  background-color: #ebdbb2;
+  background-color: var(--footer-bg);
   padding-left: 40px;
   padding-right: 40px;
+}
+
+.footer-cpright {
+  background-color: var(--footer-bg);
 }
 
 .footer-logo {

@@ -14,14 +14,39 @@
 
 ## About the project
 
+This e-commerce website is our final project for our course COSC-FE (E-commerce), a culmination of what we have learned about
+
+* Marketing and sales,
+* Business models,
+* Security,
+* Website optimization, etc.
 
 
 ## Built with
 
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+<table>
+    <tr>
+        <th colspan="2">Backend</th>
+        <th>Frontend</th>
+    </tr>
+    <tr>
+        <td>Database</td>
+        <td>Server</td>
+        <td>UI Framework</td>
+    </tr>
+    <tr>
+        <td>
+            <img src='https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white' alt='MongoDB'>
+        </td>
+        <td>
+            <img src='https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white' alt='Express.js'>
+            <img src='https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white' alt='Node.js'>
+        </td>
+        <td>
+            <img src='https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB' alt='React.js'>
+        </td>
+    </tr>
+</table>
 
 ## Getting started
 
@@ -31,8 +56,6 @@ git clone https://github.com/dattlab/ecommerce-web.git
 ```
 
 ### Prerequisites
-
-You need to have the following installed in your local machine:
 
 - Node.js
 - `npm`
@@ -53,9 +76,12 @@ You need to have the following installed in your local machine:
    npm install
    ```
 
-3. Create your `.env` file that contains
-   * `NODE_ENV` (may contain `development` or `production`)
-   * `PORT`
+3. Rename `.env.example` to `.env` and change their values
+   * `NODE_ENV` - may contain `development` or `production`
+   * `PORT` - server port
+   * `MONGO_URI` - connection to your MongoDB instance (more info [here](https://www.mongodb.com/docs/manual/reference/connection-string/))
+   * `PAYPAL_CLIENT_ID` - you can get your PayPal client ID by following this [guide](https://www.appinvoice.com/en/s/documentation/how-to-get-paypal-client-id-and-secret-key-22)
+   * Lastly, you can assign any value for `JWT_SECRET` and `PAGINATION_LIMIT`.
 
 ## Usage
 
@@ -81,12 +107,13 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## TODO
 
-- [ ] Incomplete README section
-    - [ ] About the project
-    - [ ] Installation
-    - [ ] Usage
+- [x] Incomplete README section
+    - [x] About the project
+    - [x] Installation
+    - [ ] License
 - [ ] Website
-    - [ ] Change UI style
-    - [ ] Migrate database to MongoDB
+    - [x] Change UI style
+    - [x] Migrate database to MongoDB
+    - [ ] Actual website content
     - [ ] Deployment
 

@@ -24,7 +24,7 @@ const App = () => {
   }, [dispatch]);
 
   return (
-    <>
+    <Container fluid className='d-flex flex-column justify-content-between px-0 mx-0 my-0 py-0' style={{ height: '100%' }}>
       <ToastContainer />
       <Header />
       <div className='main-content'>
@@ -33,7 +33,7 @@ const App = () => {
         </Container>
       </div>
       <Footer />
-    </>
+    </Container>
   );
 };
 

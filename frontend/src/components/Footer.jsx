@@ -19,7 +19,7 @@ const Footer = () => {
   return (
     <footer>
       <Container
-        className='footer-cont pb-5 pt-4'
+        className='footer-cont pb-3 pt-5'
         fluid
       >
         <Container className='d-flex footer-main-row justify-content-center' >
@@ -31,7 +31,7 @@ const Footer = () => {
 
           <Col md={8} className='footer-contacts'>
             <Row>
-              <h2>{brandName}</h2>
+              <h2 className='s-at-k' style={{ fontSize: '2.5rem' }}>{brandName}</h2>
             </Row>
 
             <Row>
@@ -82,13 +82,10 @@ const Footer = () => {
         </Container>
       </Container>
       <Container
-        className='text-center pt-1 pb-5'
+        className='text-center pt-1 pb-5 footer-cpright'
         fluid
-        style={{
-          backgroundColor: '#ebdbb2'
-        }}
       >
-        <small>Sinulid at Kawit &copy; {currentYear}</small>
+        <small>{brandName} &copy; {currentYear}</small>
       </Container>
     </footer>
   );
