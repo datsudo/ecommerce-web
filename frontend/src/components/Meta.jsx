@@ -11,9 +11,9 @@ const Meta = ({ title, description, keywords }) => {
 };
 
 Meta.defaultProps = {
-  title: 'Welcome To ProShop',
-  description: 'We sell the best products for cheap',
-  keywords: 'electronics, buy electronics, cheap electroincs',
+  title: 'Sinulid at Kawit',
+  description: 'Providing the best quality and affordable crochet bags',
+  keywords: 'crochet bags, semi-formal bags, crochet, knitting',
 };
 
 export default Meta;
