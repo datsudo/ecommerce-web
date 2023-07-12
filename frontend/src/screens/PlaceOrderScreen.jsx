@@ -47,11 +47,11 @@ const PlaceOrderScreen = () => {
       <CheckoutSteps step1 step2 step3 step4 />
       <Row>
         <Col md={8}>
-          <ListGroup variant='flush'>
+          <ListGroup variant='flush' className='p-2 pay-step-part' style={{ backgroundColor: 'white' }}>
             <ListGroup.Item>
               <h2>Shipping</h2>
               <p>
-                <strong>Address:</strong>
+                <strong>Address: </strong>
                 {cart.shippingAddress.address}, {cart.shippingAddress.city}{' '}
                 {cart.shippingAddress.postalCode},{' '}
                 {cart.shippingAddress.country}
@@ -82,7 +82,7 @@ const PlaceOrderScreen = () => {
                           </Link>
                         </Col>
                         <Col md={4}>
-                          {item.qty} x ₱{item.price} = ₱{item.qty * item.price}
+                          {item.qty} x ₱{item.price} = ₱{Math.ceil((item.qty * item.price) * 100) / 100}
                         </Col>
                       </Row>
                     </ListGroup.Item>
@@ -94,7 +94,7 @@ const PlaceOrderScreen = () => {
         </Col>
         <Col md={4}>
           <Card>
-            <ListGroup variant='flush'>
+            <ListGroup variant='flush' className='p-2 pay-step-order-summ-part'>
               <ListGroup.Item>
                 <h2>Order Summary</h2>
               </ListGroup.Item>

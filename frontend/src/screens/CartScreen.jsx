@@ -50,14 +50,14 @@ const CartScreen = () => {
             {cartItems.map((item) => (
               <ListGroup.Item key={item._id} className='py-3'>
                 <Row>
-                  <Col md={2}>
+                  <Col xs={3}>
                     <Image src={item.image} alt={item.name} fluid />
                   </Col>
-                  <Col md={3}>
+                  <Col xs={3}>
                     <Link to={`/product/${item._id}`}>{item.name}</Link>
                   </Col>
-                  <Col md={2}>₱{item.price}</Col>
-                  <Col md={2}>
+                  <Col xs={2}>₱{item.price}</Col>
+                  <Col xs={2}>
                     <Form.Control
                       as='select'
                       value={item.qty}
@@ -72,7 +72,7 @@ const CartScreen = () => {
                       ))}
                     </Form.Control>
                   </Col>
-                  <Col md={2}>
+                  <Col xs={2}>
                     <Button
                       type='button'
                       variant='light'
@@ -90,7 +90,7 @@ const CartScreen = () => {
       </Col>
       <Col md={4}>
         <Card>
-          <ListGroup variant='flush'>
+          <ListGroup variant='flush' className='subtotal-part p-2'>
             <ListGroup.Item>
               <h2>
                 Subtotal ({cartItems.reduce((acc, item) => acc + item.qty, 0)})

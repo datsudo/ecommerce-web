@@ -109,8 +109,8 @@ const OrderScreen = () => {
     <>
       <h1>Order {order._id}</h1>
       <Row>
-        <Col md={8}>
-          <ListGroup variant='flush'>
+        <Col md={8} className=''>
+          <ListGroup variant='flush' className='p-2 order-summ-part' style={{ backgroundColor: 'white' }}>
             <ListGroup.Item>
               <h2>Shipping</h2>
               <p>
@@ -121,7 +121,7 @@ const OrderScreen = () => {
                 <a href={`mailto:${order.user.email}`}>{order.user.email}</a>
               </p>
               <p>
-                <strong>Address:</strong>
+                <strong>Address: </strong>
                 {order.shippingAddress.address}, {order.shippingAddress.city}{' '}
                 {order.shippingAddress.postalCode},{' '}
                 {order.shippingAddress.country}
@@ -157,7 +157,7 @@ const OrderScreen = () => {
                   {order.orderItems.map((item, index) => (
                     <ListGroup.Item key={index}>
                       <Row>
-                        <Col md={1}>
+                        <Col xs={3}>
                           <Image src={item.image} alt={item.name} fluid />
                         </Col>
                         <Col>
@@ -165,8 +165,8 @@ const OrderScreen = () => {
                             {item.name}
                           </Link>
                         </Col>
-                        <Col md={4}>
-                          {item.qty} x ₱{item.price} = ₱{item.qty * item.price}
+                        <Col xs={4}>
+                          {item.qty} x ₱{item.price} = ₱{Math.ceil((item.qty * item.price) * 100) / 100}
                         </Col>
                       </Row>
                     </ListGroup.Item>
@@ -178,7 +178,7 @@ const OrderScreen = () => {
         </Col>
         <Col md={4}>
           <Card>
-            <ListGroup variant='flush'>
+            <ListGroup variant='flush' className='p-2 order-summ-pay-part'>
               <ListGroup.Item>
                 <h2>Order Summary</h2>
               </ListGroup.Item>

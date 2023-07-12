@@ -53,7 +53,7 @@ const ProfileScreen = () => {
 
   return (
     <Row>
-      <Col md={3}>
+      <Col md={3} className='mb-5'>
         <h2>User Profile</h2>
 
         <Form onSubmit={submitHandler}>

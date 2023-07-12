@@ -120,3 +120,11 @@ a:hover {
   color: var(--bg);
   background-color: #e34f4f;
 }
+
+.subtotal-part,
+.order-summ-part,
+.order-summ-pay-part,
+.pay-step-part,
+.pay-step-order-summ-part {
+  border: 1px var(--light-border) solid !important;
+}
