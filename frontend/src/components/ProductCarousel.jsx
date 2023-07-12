@@ -1,14 +1,8 @@
-import { Link } from 'react-router-dom';
 import { Carousel } from 'react-bootstrap';
-import Message from './Message';
-import { useGetTopProductsQuery } from '../slices/productsApiSlice';
 
 const ProductCarousel = () => {
-  const { data: _, isLoading, error } = useGetTopProductsQuery();
 
-  return isLoading ? null : error ? (
-    <Message variant='danger'>{error?.data?.message || error.error}</Message>
-  ) : (
+  return (
     <Carousel
       className='banner-ad mb-5'
       indicators={false}
