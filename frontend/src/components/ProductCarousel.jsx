@@ -4,7 +4,7 @@ import Message from './Message';
 import { useGetTopProductsQuery } from '../slices/productsApiSlice';
 
 const ProductCarousel = () => {
-  const { data: products, isLoading, error } = useGetTopProductsQuery();
+  const { data: _, isLoading, error } = useGetTopProductsQuery();
 
   return isLoading ? null : error ? (
     <Message variant='danger'>{error?.data?.message || error.error}</Message>
@@ -16,27 +16,23 @@ const ProductCarousel = () => {
       pause='hover'
       fade
     >
-      {products.map((product) => (
-        <Carousel.Item key={product._id}>
-          <Link to={`/product/${product._id}`}>
-            <img
-              className='banner-img d-block'
-              src={product.image}
-              alt={product.name}
-            ></img>
-            <Carousel.Caption className='banner-caption d-md-block'>
-              {/* TODO: banner ad slogan and description*/}
-              <h1>Lorem Ipsum Dolor Sit Amet</h1>
-              <div>
-                <p className='banner-caption-desc'>
-                  Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
-                  sint cillum sint consectetur cupidatat.
-                </p>
-              </div>
-            </Carousel.Caption>
-          </Link>
-        </Carousel.Item>
-      ))}
+      <Carousel.Item>
+        <img
+          className='banner-img d-block'
+          src='/images/camera.jpg'
+          alt='banner'
+        ></img>
+        <Carousel.Caption className='banner-caption d-md-block'>
+          {/* TODO: banner ad slogan and description*/}
+          <h1>Lorem Ipsum Dolor Sit Amet</h1>
+          <div>
+            <p className='banner-caption-desc'>
+              Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
+              sint cillum sint consectetur cupidatat.
+            </p>
+          </div>
+        </Carousel.Caption>
+      </Carousel.Item>
     </Carousel>
   );
 };
