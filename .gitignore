@@ -27,3 +27,6 @@ frontend/build
 uploads/*png
 uploads/*jpg
 notes.md
+
+# Local Netlify folder
+.netlify
