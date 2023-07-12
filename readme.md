@@ -100,6 +100,11 @@ npm run server  # for backend
 npm run client  # for frontend
 ```
 
+To build and deploy:
+```bash
+npm run build
+```
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
