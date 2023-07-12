@@ -52,7 +52,7 @@ a:hover {
 }
 
 .main-content {
-  margin: 0 40px;
+  margin: 0 20px;
 }
 
 .btn-primary {
@@ -127,4 +127,10 @@ a:hover {
 .pay-step-part,
 .pay-step-order-summ-part {
   border: 1px var(--light-border) solid !important;
+}
+
+@media (max-width: 200px) {
+  .media-content {
+    margin: 0 10px !important;
+  }
 }
