@@ -47,7 +47,11 @@ const PlaceOrderScreen = () => {
       <CheckoutSteps step1 step2 step3 step4 />
       <Row>
         <Col md={8}>
-          <ListGroup variant='flush' className='p-2 pay-step-part' style={{ backgroundColor: 'white' }}>
+          <ListGroup
+            variant='flush'
+            className='p-2 pay-step-part'
+            style={{ backgroundColor: 'white' }}
+          >
             <ListGroup.Item>
               <h2>Shipping</h2>
               <p>
@@ -82,7 +86,8 @@ const PlaceOrderScreen = () => {
                           </Link>
                         </Col>
                         <Col md={4}>
-                          {item.qty} x ₱{item.price} = ₱{Math.ceil((item.qty * item.price) * 100) / 100}
+                          {item.qty} x ₱{item.price} = ₱
+                          {Math.ceil(item.qty * item.price * 100) / 100}
                         </Col>
                       </Row>
                     </ListGroup.Item>

@@ -110,7 +110,11 @@ const OrderScreen = () => {
       <h1>Order {order._id}</h1>
       <Row>
         <Col md={8} className=''>
-          <ListGroup variant='flush' className='p-2 order-summ-part' style={{ backgroundColor: 'white' }}>
+          <ListGroup
+            variant='flush'
+            className='p-2 order-summ-part'
+            style={{ backgroundColor: 'white' }}
+          >
             <ListGroup.Item>
               <h2>Shipping</h2>
               <p>
@@ -166,7 +170,8 @@ const OrderScreen = () => {
                           </Link>
                         </Col>
                         <Col xs={4}>
-                          {item.qty} x ₱{item.price} = ₱{Math.ceil((item.qty * item.price) * 100) / 100}
+                          {item.qty} x ₱{item.price} = ₱
+                          {Math.ceil(item.qty * item.price * 100) / 100}
                         </Col>
                       </Row>
                     </ListGroup.Item>
