@@ -110,15 +110,3 @@ npm run build
 Distributed under the MIT License. See `LICENSE` for more information.
 
 
-## TODO
-
-- [x] Incomplete README section
-    - [x] About the project
-    - [x] Installation
-    - [ ] License
-- [ ] Website
-    - [x] Change UI style
-    - [x] Migrate database to MongoDB
-    - [ ] Actual website content
-    - [ ] Deployment
-
