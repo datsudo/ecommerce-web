@@ -1,6 +1,5 @@
 <a name="readme-top"></a>
 
-
 <div align="center">
     <h1 align="center">Sinulid at Kawit</h1>
     <img src="./frontend/public/logo.png" alt="ecommerce-web-logo" width='100' />
@@ -11,9 +10,7 @@
     </p>
 </div>
 
-
 ## About the project
-
 This e-commerce website is our final project for our course COSC-FE (E-commerce), a culmination of what we have learned about
 
 * Marketing and sales,
@@ -21,9 +18,7 @@ This e-commerce website is our final project for our course COSC-FE (E-commerce)
 * Security,
 * Website optimization, etc.
 
-
 ## Built with
-
 <table>
     <tr>
         <th colspan="2">Backend</th>
@@ -49,19 +44,16 @@ This e-commerce website is our final project for our course COSC-FE (E-commerce)
 </table>
 
 ## Getting started
-
 Get a local copy up and running by cloning the repository and following the installation steps
 ```bash
 git clone https://github.com/dattlab/ecommerce-web.git
 ```
 
 ### Prerequisites
-
 - Node.js
 - `npm`
 
 ### Installation
-
 1. Go to the cloned directory and install the dependencies
 
    ```bash
