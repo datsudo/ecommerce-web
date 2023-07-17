@@ -1,9 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/api/*",
-      "destination": "https://ecomm-web-production.up.railway.app/api/*"
-    }
-  ]
-}
-
