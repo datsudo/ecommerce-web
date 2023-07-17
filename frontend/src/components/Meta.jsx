@@ -12,7 +12,7 @@ const Meta = ({ title, description, keywords }) => {
 
 Meta.defaultProps = {
   // TODO: Brand name
-  title: 'E-commerce Website',
+  title: 'Sinulid at Kawit',
   description: 'Providing the best quality and affordable crochet bags',
   keywords: 'crochet bags, semi-formal bags, crochet, knitting',
 };
