@@ -3,8 +3,8 @@ import { Container, Image } from 'react-bootstrap';
 export default function PostOne() {
   return (
     <Container className='post-cont'>
-      <h1>Sample article 1</h1>
-      <h3 className='post-date'>July 11, 2023</h3>
+      <h1>Why crochet bags are considered "eco-friendly"</h1>
+      <h3 className='post-date'>Darylle Villanueva — July 11, 2023</h3>
 
       <hr />
 
@@ -37,20 +37,6 @@ Crochet bags come in a variety of shapes, sizes, and designs, catering to differ
 
         <h3>Conclusion</h3>
         <p>Crochet bags offer a sustainable and eco-friendly alternative to conventional bags. The use of natural materials, minimal environmental impact during production, waste reduction through yarn repurposing, and their durability contribute to their reputation as an environmentally conscious fashion choice. By opting for crochet bags, you not only reduce your ecological footprint but also support local artisans and foster a more sustainable fashion industry. So, the next time you're in need of a new bag, consider the eco-friendly charm of a crochet creation.</p>
-
-        <p>
-          Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
-          enim labore culpa sint ad nisi Lorem pariatur mollit ex esse
-          exercitation amet. Nisi anim cupidatat excepteur officia.
-          Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate
-          voluptate dolor minim nulla est proident. Nostrud officia pariatur ut
-          officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
-          commodo officia dolor Lorem duis laboris cupidatat officia voluptate.
-          Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis
-          officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis
-          sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea
-          consectetur et est culpa et culpa duis.
-        </p>
       </div>
     </Container>
   );
