@@ -1,16 +1,18 @@
-import { Nav, Badge, NavDropdown, Button } from 'react-bootstrap';
+import { Nav, Badge, NavDropdown, Button, } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { useLogoutMutation } from '../slices/usersApiSlice';
 import { logout } from '../slices/authSlice';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { NavHashLink } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   cartNavMenuLabel,
   adminNavMenuLabel,
   loginNavMenuLabel,
   aboutNavMenuLabel,
+  contactNavMenuLabel,
   blogNavMenuLabel,
 } from '../constants';
 
@@ -33,10 +35,30 @@ export default function NavMenu() {
     }
   };
 
+
+  const contactFixHover = {
+    color: '#736E6C',
+    '&:hover, &:focus': {
+      color: '#191817'
+    }
+  }
+
   return (
     <Nav>
       <LinkContainer to='/about' className='d-flex ms-1'>
         <Nav.Link>{aboutNavMenuLabel}</Nav.Link>
+      </LinkContainer>
+
+      <LinkContainer to=''>
+        <Nav.Link>
+          <NavHashLink
+            to='#footer-section'
+            className='d-flex contact-nav'
+            style={contactFixHover}
+          >
+            {contactNavMenuLabel}
+          </NavHashLink>
+        </Nav.Link>
       </LinkContainer>
 
       <LinkContainer to='/blog' className='d-flex'>

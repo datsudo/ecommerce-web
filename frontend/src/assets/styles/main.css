@@ -129,6 +129,7 @@ a:hover {
   border: 1px var(--light-border) solid !important;
 }
 
+
 @media (max-width: 200px) {
   .media-content {
     margin: 0 10px !important;

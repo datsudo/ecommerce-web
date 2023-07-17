@@ -7,7 +7,6 @@ import {
   extLinkIcon,
   phoneIcon,
   emailIcon,
-  addressIcon,
   fbIcon,
   twtIcon,
   instaIcon,
@@ -17,7 +16,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer>
+    <footer id='footer-section'>
       <Container className='footer-cont pb-3 pt-5' fluid>
         <Container className='d-flex footer-main-row justify-content-center'>
           <Col md={12} sm={12} className='footer-logo mb-3'>
@@ -48,11 +47,11 @@ const Footer = () => {
                     {navEmail}
                   </a>
                 </div>
-                <div className='footer-items'>
+                {/* <div className='footer-items'>
                   <b>{addressIcon} </b>
                   10 St. Peter Street, San Jose Village, Muntinlupa City, Metro
                   Manila
-                </div>
+                </div> */}
               </Col>
               <Col className='mb-4' md={4} sm={6} xs={12}>
                 <h5>Follow</h5>
@@ -97,6 +96,11 @@ const Footer = () => {
                 <div className='footer-items'>
                   <Link to='/blog' className='social-link'>
                     Our Blog
+                  </Link>
+                </div>
+                <div className='footer-items'>
+                  <Link to='/privacy-policy' className='social-link'>
+                    Privacy Policy
                   </Link>
                 </div>
               </Col>

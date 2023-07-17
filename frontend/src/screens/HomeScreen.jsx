@@ -52,8 +52,18 @@ const HomeScreen = () => {
         </>
       )}
       <Container className='px-0 mx-0 mt-5' fluid>
-        <h1>Lorem ipsum dolor sit amet</h1>
-        <hr />
+        <h1 style={{ marginBottom: '10px' }}>Section 2</h1>
+        <hr style={{ marginTop: '0px' }} />
+        <p>
+          Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat. Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+        </p>
+      </Container>
+      <Container className='px-0 mx-0 mt-5' fluid>
+        <h1 style={{ marginBottom: '10px' }}>Visit our blog</h1>
+        <hr style={{ marginTop: '0px' }} />
+        <p>
+          Visit our <Link to='/blog'>blog</Link> and let the threads of creativity guide your crochet journey. In our blogs, we will explore a tapestry of inspiring tutorials, insightful articles, and trendsetting patterns that will ignite your passion for all things crochet.
+        </p>
       </Container>
     </>
   );

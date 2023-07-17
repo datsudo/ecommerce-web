@@ -17,8 +17,7 @@ export default function BlogCard(props) {
           {props.pubdate}
         </Card.Subtitle>
         <Card.Text>
-          Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
-          enim labore culpa sint ad nisi Lorem pariatur mollit... {}
+          {props.desc}... {}
           <Link to={`/blog/${props.id}`}>Read more</Link>
         </Card.Text>
       </Card.Body>

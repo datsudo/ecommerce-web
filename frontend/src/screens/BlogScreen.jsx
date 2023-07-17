@@ -10,17 +10,19 @@ export default function BlogScreen() {
           <Col sm={12} md={6} lg={4} xl={3}>
             <BlogCard
               id={1}
-              title='Sample article 1'
+              title='Why crochet bags are considered "eco-friendly"?'
+              desc='In recent years, there has been a growing emphasis on sustainable and eco-friendly choices in various aspects of our lives, including fashion'
               pubdate='July 11, 2023'
-              img='/images/phone.jpg'
+              img='/images/blog-poster-1.png'
             />
           </Col>
           <Col sm={12} md={6} lg={4} xl={3}>
             <BlogCard
               id={2}
               title='Sample article 2'
+              desc=''
               pubdate='July 13, 2023'
-              img='/images/camera.jpg'
+              img='/images/blog-poster-2.png'
             />
           </Col>
         </Row>

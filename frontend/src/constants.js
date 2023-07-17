@@ -29,10 +29,10 @@ export const ORDERS_URL = '/api/orders';
 export const PAYPAL_URL = '/api/config/paypal';
 
 // Icons, labels
-export const brandName = 'Brand Name';
+export const brandName = 'Sinulid at Kawit';
 export const searchPlaceholder = 'Search...';
 export const navPhoneNumber = '+63(12)3456-7890';
-export const navEmail = 'example@gmail.com';
+export const navEmail = 'sinulidatkawit@gmail.com';
 export const adminNavMenuLabel = (
   <>
     {' '}
@@ -64,6 +64,12 @@ export const aboutNavMenuLabel = (
   <>
     {' '}
     <FontAwesomeIcon className='mt-1 pe-1' icon={faPeopleGroup} /> About{' '}
+  </>
+);
+export const contactNavMenuLabel = (
+  <>
+    {' '}
+    <FontAwesomeIcon className='mt-1 pe-1' icon={faPeopleGroup} /> Contact{' '}
   </>
 );
 export const blogNavMenuLabel = (

@@ -8,7 +8,7 @@ export default function PostTwo() {
 
       <hr />
 
-      <Image src='/images/camera.jpg' className='post-img mb-3' />
+      <Image src='/images/blog-poster-2.png' className='post-img mb-3' />
 
       <div className='post-content'>
         <p>

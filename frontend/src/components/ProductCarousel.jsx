@@ -13,7 +13,7 @@ const ProductCarousel = () => {
       <Carousel.Item>
         <img
           className='banner-img d-block'
-          src='/images/camera.jpg'
+          src='/images/pottery.jpg'
           alt='banner'
         ></img>
         <Carousel.Caption className='banner-caption d-md-block'>

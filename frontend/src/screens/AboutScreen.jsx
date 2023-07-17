@@ -10,18 +10,38 @@ export default function AboutScreen() {
       </h1>
 
       <p>
-        Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit
-        enim labore culpa sint ad nisi Lorem pariatur mollit ex esse
-        exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit
-        nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor
-        minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure
-        elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor
-        Lorem duis laboris cupidatat officia voluptate. Culpa proident
-        adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod.
-        Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
-        Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa
-        et culpa duis.
+        <strong>Sinulid at Kawit</strong> was founded by passionate
+        artisans with a deep love for the art of crochet. With years
+        of experience and expertise in creating beautiful
+        and functional crocheted items, we set. out to bring our unique designs and
+        craftsmanship to the world. This crocheted bag business is a unique
+        venture that combines creativity, craftsmanship, and functionality to
+        provide customers with beautifully handcrafted bags. We believe in the
+        power of handmade products nd the value they add to our lives.
       </p>
+      <p className='mb-5'>
+        <strong>Crocheting</strong> is not only an ancient craft but also a means of <strong>self-expression</strong>, <strong>creativity</strong>,
+        and <strong>sustainability</strong>. We take pride in using high-quality
+        yarns and eco-friendly materials to create durable and timeless crocheted
+        bags that are both fashionable and functional. Which revolves around
+        offering a wide range of crocheted bags that are not only stylish and
+        trendy but also eco-friendly and sustainable.
+      </p>
+
+      <hr />
+
+      <h1>Vision</h1>
+
+      <p>
+        Our vision is to become a leading brand in the
+        crocheted bag industry, known for our commitment to sustainability,
+        craftsmanship, and exceptional customer experience. We aim to inspire
+        individuals to embrace eco-friendly fashion choices and make a positive
+        impact on the environment without compromising on style.
+      </p>
+
+      <hr />
+
     </Container>
   );
 }
