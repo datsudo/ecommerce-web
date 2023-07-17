@@ -24,5 +24,12 @@
 }
 
 .banner-caption-desc {
-  font-size: 1.2rem;
+  font-family: 'Volkhov', serif;
+  font-size: 1.4rem;
+}
+
+.satk {
+  margin-top: -10px;
+  font-family: 'Volkhov', serif;
+  font-size: 2.5rem;
 }

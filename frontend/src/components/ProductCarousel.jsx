@@ -18,11 +18,11 @@ const ProductCarousel = () => {
         ></img>
         <Carousel.Caption className='banner-caption d-md-block'>
           {/* TODO: banner ad slogan and description*/}
-          <h1>Lorem Ipsum Dolor Sit Amet</h1>
+          <h1>Feel the crafts</h1>
           <div>
             <p className='banner-caption-desc'>
-              Lorem ipsum dolor sit amet, qui minim labore adipisicing minim
-              sint cillum sint consectetur cupidatat.
+              <span style={{ fontWeight: 'normal' }}>beyond</span>
+              <div className='satk'>needles and threads</div>
             </p>
           </div>
         </Carousel.Caption>
