@@ -16,7 +16,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id='footer-section'>
+    <footer id='contacts'>
       <Container className='footer-cont pb-3 pt-5' fluid>
         <Container className='d-flex footer-main-row justify-content-center'>
           <Col md={12} sm={12} className='footer-logo mb-3'>

@@ -2,12 +2,14 @@ import { Row, Col, Container } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import { useGetProductsQuery } from '../slices/productsApiSlice';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import Product from '../components/Product';
 import Loader from '../components/Loader';
 import Message from '../components/Message';
 import Paginate from '../components/Paginate';
 import ProductCarousel from '../components/ProductCarousel';
 import Meta from '../components/Meta';
+import BannerSlider from '../components/BannerSlide';
 
 const HomeScreen = () => {
   const { pageNumber, keyword } = useParams();
@@ -51,12 +53,14 @@ const HomeScreen = () => {
           />
         </>
       )}
+
       <Container className='px-0 mx-0 mt-5' fluid>
-        <h1 style={{ marginBottom: '10px' }}>Section 2</h1>
+        <h1 style={{ marginBottom: '10px' }}>Get to know more</h1>
         <hr style={{ marginTop: '0px' }} />
         <p>
-          Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat. Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+          Our customer care members are real crafters who's choosy as you when it comes to their craft. We're here to help you craft the best bag you can possible have. Click <Link to='/about'>here</Link> to learn more about our business. See our contact links <HashLink to='#contacts'>here</HashLink>. Let's work together and elevate our creativity!
         </p>
+        <BannerSlider />
       </Container>
       <Container className='px-0 mx-0 mt-5' fluid>
         <h1 style={{ marginBottom: '10px' }}>Visit our blog</h1>

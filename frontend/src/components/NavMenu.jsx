@@ -52,7 +52,7 @@ export default function NavMenu() {
       <LinkContainer to=''>
         <Nav.Link>
           <NavHashLink
-            to='#footer-section'
+            to='#contacts'
             className='d-flex contact-nav'
             style={contactFixHover}
           >

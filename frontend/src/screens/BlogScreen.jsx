@@ -19,8 +19,8 @@ export default function BlogScreen() {
           <Col sm={12} md={6} lg={4} xl={3}>
             <BlogCard
               id={2}
-              title='Sample article 2'
-              desc=''
+              title='Elevate Your Style with Crocheted Bags: The Perfect Fashion Accessory'
+              desc="In the ever-evolving world of fashion, it's essential to stay ahead of the curve and embrace unique and eye-catching accessories"
               pubdate='July 13, 2023'
               img='/images/blog-poster-2.png'
             />

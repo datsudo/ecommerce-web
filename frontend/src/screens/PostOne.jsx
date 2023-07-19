@@ -2,7 +2,7 @@ import { Container, Image } from 'react-bootstrap';
 
 export default function PostOne() {
   return (
-    <Container className='post-cont'>
+    <Container className='post-cont mt-5'>
       <h1>Why crochet bags are considered "eco-friendly"</h1>
       <h3 className='post-date'>Darylle Villanueva — July 11, 2023</h3>
 
