@@ -4,7 +4,7 @@ export default function PostTwo() {
   return (
     <Container className='post-cont mt-5'>
       <h1>Elevate Your Style with Crocheted Bags: The Perfect Fashion Accessory</h1>
-      <h3 className='post-date'>Aubrey Shane Pe — July 13, 2023</h3>
+      <h3 className='post-date'>Aubrey Shaine Pe — July 13, 2023</h3>
       <hr />
 
       <Image src='/images/blog-poster-2.png' className='post-img mb-3' />
